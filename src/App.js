@@ -1,27 +1,22 @@
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
-import "./App.css";
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Rockets from "./pages/Rockets";
+import Missions from "./pages/Missions";
+import MyProfile from "./pages/MyProfile";
+import { Provider } from "react-redux";
 
-function Layout() {
-  return (
-    <>
-      <h1>Layout</h1>
-      <Outlet />
-    </>
-  );
-}
-
-function App() {
-  return (
-    <BrowserRouter>
+const App = () => (
+  <Router>
+    <div className="App">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<div>Home page</div>} />
-          <Route path="about" element={<div>About page</div>} />
-          <Route path="*" element={<div>If page not found it goes here</div>} />
-        </Route>
+        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/missions" element={<Missions />} />
+        <Route path="/myprofile" element={MyProfile} />
       </Routes>
-    </BrowserRouter>
-  );
-}
+    </div>
+  </Router>
+);
 
 export default App;
