@@ -11,10 +11,7 @@ export const fetchRockets = createAsyncThunk(
 
 export const reserveRocket = createAsyncThunk(
   'rockets/reserveRocket',
-  async (rocketId) =>
-    // You may want to send a request to a server to handle the reservation
-    // For now, we'll simulate it by just returning the rocketId
-    rocketId,
+  async (rocketId) => rocketId,
 );
 
 const rocketsSlice = createSlice({
