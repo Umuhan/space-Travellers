@@ -37,7 +37,10 @@ const Rockets = () => {
                 <h3>{rocket.rocket_name}</h3>
                 <p>{rocket.description}</p>
                 <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
-                <button onClick={() => handleReserveRocket(rocket.id)}>
+                <button
+                  type="button"
+                  onClick={() => handleReserveRocket(rocket.id)}
+                >
                   Reserve Rocket
                 </button>
               </li>
