@@ -1,57 +1,78 @@
-import React, { useEffect } from 'react';
+/** @format */
+
+import { Table, Button, Badge } from 'react-bootstrap';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missionsSlice';
+import {
+  fetchMissions,
+  joinMission,
+  leaveMission,
+} from '../redux/missions/missionsSlice';
 
 const Missions = () => {
+  const { missions, loading, error } = useSelector((state) => state.missions);
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions.missions);
-  const status = useSelector((state) => state.missions.status);
 
   useEffect(() => {
-    if (status === 'idle') {
-      dispatch(fetchMissions());
-    }
-  }, [dispatch, status]);
+    dispatch(fetchMissions());
+  }, [dispatch]);
 
+  if (loading) {
+    return <h1 className="container align-middle text-center">Loading...</h1>;
+  }
+  if (error) {
+    return <h1 className="container align-middle text-center">{error}</h1>;
+  }
   return (
-    <div>
-      <h2>Missions Page</h2>
-      {status === 'loading' && <p>Loading...</p>}
-      {status === 'failed' && <p>Error loading missions data</p>}
-      {status === 'succeeded' && (
-        <table>
-          <thead>
-            <tr>
-              <th>Mission</th>
-              <th>Description</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {missions.map((mission) => (
-              <tr key={mission.mission_id}>
-                <td>{mission.mission_name}</td>
-                <td>{mission.description}</td>
-
-                <td>
-                  {mission.reserved ? (
-                    <>
-                      Active MEMBER
-                      <button type="button">Leave Mission</button>
-                    </>
-                  ) : (
-                    <>
-                      NOT A MEMBER
-                      <button type="button">Join Mission</button>
-                    </>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
-    </div>
+    <Table striped className="container">
+      <thead>
+        <tr>
+          <th>Mission</th>
+          <th>Description</th>
+          <th colSpan={4}>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map(({
+          missionId, missionName, description, reserved,
+        }) => (
+          <tr key={missionId}>
+            <td className="bold">{missionName}</td>
+            <td>{description}</td>
+            <td className="align-middle text-center">
+              {reserved ? (
+                <Badge className="bold bg-primary" variant="secondary">
+                  Active Member
+                </Badge>
+              ) : (
+                <Badge className="bold bg-secondary" variant="secondary">
+                  NOT A MEMBER
+                </Badge>
+              )}
+            </td>
+            <td className="align-middle text-center">
+              {reserved ? (
+                <Button
+                  className="w-100 btn btn-outline-danger border-2 bold btn-sm"
+                  variant="light"
+                  onClick={() => dispatch(leaveMission(missionId))}
+                >
+                  Leave Mission
+                </Button>
+              ) : (
+                <Button
+                  className="w-100 btn btn-outline-secondary border-2 bold btn-sm"
+                  variant="light"
+                  onClick={() => dispatch(joinMission(missionId))}
+                >
+                  Join Mission
+                </Button>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
   );
 };
 
