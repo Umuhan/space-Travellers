@@ -1,63 +1,68 @@
 import React, { useEffect } from "react";
 import "../components/styles/Rockets.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRockets, reserveRocket } from "../redux/rockets/rocketsSlice";
+import {
+  fetchRockets,
+  reserveRocket,
+  cancelReserve,
+} from "../redux/rockets/rocketsSlice";
 
 const Rockets = () => {
+  const { rockets } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.rockets.rockets);
-  const status = useSelector((state) => state.rockets.status);
-  const error = useSelector((state) => state.rockets.error);
 
   useEffect(() => {
-    if (status === "idle") {
-      dispatch(fetchRockets());
-    }
-  }, [dispatch, status]);
-
-  const handleReserveRocket = (rocketId) => {
-    dispatch(reserveRocket(rocketId));
-  };
-
-  const handleCancelReservation = (rocketId) => {
-    dispatch(cancelReservation(rocketId));
-  };
+    dispatch(fetchRockets());
+  }, [dispatch]);
 
   return (
     <div>
-      {status === "loading" && <p>Loading...</p>}
-      {status === "failed" && (
-        <p>
-          Error loading rockets:
-          {error}
-        </p>
-      )}
-      {status === "succeeded" && (
-        <div>
-          <h2>Rockets</h2>
-          <ul>
-            {rockets.map((rocket) => (
-              <li key={rocket.id}>
-                <h3>{rocket.rocket_name}</h3>
-                <p>{rocket.description}</p>
-                <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
-                {rocket.reserved ? (
-                  <div>
-                    <span>Reserved</span>
-                    <button onClick={() => handleCancelReservation(rocket.id)}>
-                      Cancel Reservation
+      <ul>
+        {rockets.map((rocket) => {
+          const { rocketId, rocketName, description, rocketImage } = rocket;
+          return (
+            <li key={rocketId} className="list">
+              <img
+                src={rocketImage[0]}
+                alt={rocketName}
+                className="rocket-img"
+              />
+              <div className="description">
+                <h3>{rocketName}</h3>
+
+                <div className="reserved-info">
+                  {rocket.reserved && (
+                    <button type="button" className="reserve-btn">
+                      Reserved
                     </button>
-                  </div>
-                ) : (
-                  <button onClick={() => handleReserveRocket(rocket.id)}>
+                  )}
+
+                  <p>{description}</p>
+                </div>
+                {!rocket.reserved && (
+                  <button
+                    className="btn"
+                    type="button"
+                    onClick={() => dispatch(reserveRocket(rocketId))}
+                  >
                     Reserve Rocket
                   </button>
                 )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+                {rocket.reserved && (
+                  <button
+                    className="btn"
+                    type="button"
+                    onClick={() => dispatch(cancelReserve(rocketId))}
+                  >
+                    {" "}
+                    Cancel Reservation
+                  </button>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
