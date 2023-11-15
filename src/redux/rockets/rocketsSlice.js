@@ -1,17 +1,16 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   loading: false,
   rockets: [],
-  error: "",
+  error: '',
 };
 
 export const fetchRockets = createAsyncThunk(
-  "rockets/fetchRockets",
+  'rockets/fetchRockets',
   async () => {
-    const response = await axios.get("https://api.spacexdata.com/v4/rockets");
-    console.log(response.data);
+    const response = await axios.get('https://api.spacexdata.com/v4/rockets');
     return response.data.map(
       ({
         id: rocketId,
@@ -23,13 +22,13 @@ export const fetchRockets = createAsyncThunk(
         rocketName,
         description,
         rocketImage,
-      })
+      }),
     );
-  }
+  },
 );
 
 const rocketsSlice = createSlice({
-  name: "rockets",
+  name: 'rockets',
   initialState,
   reducers: {
     reserveRocket: (state, action) => {
@@ -56,7 +55,7 @@ const rocketsSlice = createSlice({
     [fetchRockets.fulfilled]: (state, action) => {
       state.loading = false;
       state.rockets = action.payload;
-      state.error = "";
+      state.error = '';
     },
     [fetchRockets.rejected]: (state, action) => {
       state.loading = false;
