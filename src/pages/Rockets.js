@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import '../components/styles/Rockets.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchRockets, reserveRocket } from '../redux/rockets/rocketsSlice';
+import React, { useEffect } from "react";
+import "../components/styles/Rockets.css";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRockets, reserveRocket } from "../redux/rockets/rocketsSlice";
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,7 @@ const Rockets = () => {
   const error = useSelector((state) => state.rockets.error);
 
   useEffect(() => {
-    if (status === 'idle') {
+    if (status === "idle") {
       dispatch(fetchRockets());
     }
   }, [dispatch, status]);
@@ -19,16 +19,20 @@ const Rockets = () => {
     dispatch(reserveRocket(rocketId));
   };
 
+  const handleCancelReservation = (rocketId) => {
+    dispatch(cancelReservation(rocketId));
+  };
+
   return (
     <div>
-      {status === 'loading' && <p>Loading...</p>}
-      {status === 'failed' && (
+      {status === "loading" && <p>Loading...</p>}
+      {status === "failed" && (
         <p>
           Error loading rockets:
           {error}
         </p>
       )}
-      {status === 'succeeded' && (
+      {status === "succeeded" && (
         <div>
           <h2>Rockets</h2>
           <ul>
@@ -37,12 +41,18 @@ const Rockets = () => {
                 <h3>{rocket.rocket_name}</h3>
                 <p>{rocket.description}</p>
                 <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
-                <button
-                  type="button"
-                  onClick={() => handleReserveRocket(rocket.id)}
-                >
-                  Reserve Rocket
-                </button>
+                {rocket.reserved ? (
+                  <div>
+                    <span>Reserved</span>
+                    <button onClick={() => handleCancelReservation(rocket.id)}>
+                      Cancel Reservation
+                    </button>
+                  </div>
+                ) : (
+                  <button onClick={() => handleReserveRocket(rocket.id)}>
+                    Reserve Rocket
+                  </button>
+                )}
               </li>
             ))}
           </ul>
