@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .rocket-img {
@@ -18,7 +19,7 @@
 }
 
 .btn {
-  background-color: #6236f4;
+  background-color: #7955f1;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -27,6 +28,12 @@
   font-size: 16px;
   margin: 10px 0px;
   cursor: pointer;
+}
+
+.btn-cancle {
+  background-color: #fff;
+  border: 1px solid #555;
+  color: #555;
 }
 
 .reserve-btn {

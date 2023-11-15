@@ -50,7 +50,7 @@ const Rockets = () => {
                 )}
                 {rocket.reserved && (
                   <button
-                    className="btn"
+                    className="btn btn-cancle"
                     type="button"
                     onClick={() => dispatch(cancelReserve(rocketId))}
                   >
