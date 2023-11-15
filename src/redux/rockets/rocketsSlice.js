@@ -1,70 +1,70 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const initialState = {
+  loading: false,
+  rockets: [],
+  error: "",
+};
+
 export const fetchRockets = createAsyncThunk(
   "rockets/fetchRockets",
   async () => {
     const response = await axios.get("https://api.spacexdata.com/v4/rockets");
-    return response.data;
-  }
-);
-
-export const reserveRocket = createAsyncThunk(
-  "rockets/reserveRocket",
-  async (rocketId) => {
-    // You may want to send a request to a server to handle the reservation
-    // For now, we'll simulate it by just returning the rocketId
-    return rocketId;
-  }
-);
-
-export const cancelReservation = createAsyncThunk(
-  "rockets/cancelReservation",
-  async (rocketId) => {
-    // You may want to send a request to a server to handle the reservation cancellation
-    // For now, we'll simulate it by just returning the rocketId
-    return rocketId;
+    console.log(response.data);
+    return response.data.map(
+      ({
+        id: rocketId,
+        name: rocketName,
+        description,
+        flickr_images: rocketImage,
+      }) => ({
+        rocketId,
+        rocketName,
+        description,
+        rocketImage,
+      })
+    );
   }
 );
 
 const rocketsSlice = createSlice({
   name: "rockets",
-  initialState: {
-    rockets: [],
-    status: "idle",
-    error: null,
-  },
-  reducers: {},
-  extraReducers: (builder) => {
-    builder
-      .addCase(fetchRockets.pending, (state) => {
-        state.status = "loading";
-      })
-      .addCase(fetchRockets.fulfilled, (state, action) => {
-        state.status = "succeeded";
-        state.rockets = action.payload;
-      })
-      .addCase(fetchRockets.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message;
-      })
-      .addCase(reserveRocket.fulfilled, (state, action) => {
-        const reservedRocketId = action.payload;
-        state.rockets = state.rockets.map((rocket) =>
-          rocket.id === reservedRocketId
-            ? { ...rocket, reserved: true }
-            : rocket
-        );
-      })
-      .addCase(cancelReservation.fulfilled, (state, action) => {
-        const canceledRocketId = action.payload;
-        state.rockets = state.rockets.map((rocket) =>
-          rocket.id === canceledRocketId
-            ? { ...rocket, reserved: false }
-            : rocket
-        );
+  initialState,
+  reducers: {
+    reserveRocket: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket.rocketId !== action.payload) {
+          return { ...rocket };
+        }
+        return { ...rocket, reserved: true };
       });
+    },
+    cancelReserve: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket.rocketId !== action.payload) {
+          return { ...rocket };
+        }
+        return { ...rocket, reserved: false };
+      });
+    },
+  },
+  extraReducers: {
+    [fetchRockets.pending]: (state) => {
+      state.loading = true;
+    },
+    [fetchRockets.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.rockets = action.payload;
+      state.error = "";
+    },
+    [fetchRockets.rejected]: (state, action) => {
+      state.loading = false;
+      state.rockets = [];
+      state.error = action.error.message;
+    },
   },
 });
 
+export const { reserveRocket, cancelReserve } = rocketsSlice.actions;
 export default rocketsSlice.reducer;
