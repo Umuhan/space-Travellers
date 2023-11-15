@@ -1,0 +1,42 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rocket-img {
+  width: 20%;
+  height: 20%;
+  margin-right: 10px;
+}
+
+.description {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: medium;
+}
+
+.btn {
+  background-color: #6236f4;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.reserve-btn {
+  display: inline-block;
+  background-color: rgba(14, 109, 103, 0.6);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
