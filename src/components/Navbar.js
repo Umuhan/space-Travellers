@@ -1,24 +1,28 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './styles/Navbar.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "./styles/Navbar.css";
 
 const Navbar = () => (
   <main>
     <nav className="nav">
-      <h2>Space Travellers Hub</h2>
+      <div className="nav-container">
+        <img src="/planet.png" alt="" className="space-img" />
+        <h3>Space Travellers Hub</h3>
+      </div>
+
       <ul className="nav-list">
-        <li className="nav-link">
-          <NavLink to="/rockets" activeClassName="active-link">
+        <li>
+          <NavLink to="/rockets" className="nav-link">
             Rockets
           </NavLink>
         </li>
-        <li className="nav-link">
-          <NavLink to="/missions" activeClassName="active-link">
+        <li>
+          <NavLink to="/missions" className="nav-link">
             Missions
           </NavLink>
         </li>
-        <li className="nav-link">
-          <NavLink to="/myprofile" activeClassName="active-link">
+        <li>
+          <NavLink to="/myprofile" className="nav-link">
             My Profile
           </NavLink>
         </li>
