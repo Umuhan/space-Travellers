@@ -14,6 +14,7 @@ const App = () => (
       <div className="App">
         <Navbar />
         <Routes>
+          <Route path="/" element={<Rockets />} />
           <Route path="/rockets" element={<Rockets />} />
           <Route path="/missions" element={<Missions />} />
           <Route path="/myprofile" element={MyProfile} />
