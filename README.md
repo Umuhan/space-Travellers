@@ -25,25 +25,30 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Space-travelers]] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+[Space-travelers] In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
 
-**[your_project__name]** is a...
+**[Space Travelers' Hub]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
+-Reactjs
+-Redux
+-JavaScript
+-CSS
+-Jest
+-Linters
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Reserve and Cancel Rockets]]**
+- **[Join and Leave Missions]]**
+- **[Display reserved rockets and joined missions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,9 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link]()
+- [https://umuhan.github.io/space-Travellers/]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,97 +64,70 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
 Example commands:
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+cd space-travelers
+git@github.com:Umuhan/space-Travellers.git
 
 ### Install
 
 Install this project with:
 
-<!--
 Example command:
 
-```sh
-  cd my-project
-  gem install
-```
---->
+npm install
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
 Example command:
 
-```sh
-  rails server
-```
---->
+npm run build
+npm start
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
 Example command:
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+npm test
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
 Example:
 
 ```sh
+npm start
 
-```
- -->
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Umuhan)
+- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
 
 👤 **Author2**
 
@@ -163,48 +139,46 @@ Example:
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+
+
+- [ ] **[Reserve and cancel ]**
+- [ ] **[Display reserved]**
+- [ ] **[Rockets and Missions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Umuhan/space-Travellers/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+
+If you like this project give us ⭐
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+
+I would like to thank my partner.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
-
 This project is [MIT](./LICENSE) licensed.
+```
