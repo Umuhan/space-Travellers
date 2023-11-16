@@ -106,20 +106,19 @@ Example:
 npm start
 
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
+## 👥 Authors <a name="authors"></a>
 
+👤 **Author**
 
+- GitHub: [@](https://github.com/)
+- Twitter: [@](https://twitter.com/)
+- LinkedIn: [@](https://www.linkedin.com/in/)
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/Umuhan)
-- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 👤 **Hamza Baig**
 
@@ -129,11 +128,8 @@ npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- FUTURE FEATURES -->
-
-
-
-
 
 - [ ] **[Reserve and cancel ]**
 - [ ] **[Display reserved]**
