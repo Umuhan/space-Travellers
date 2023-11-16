@@ -1,39 +1,44 @@
-/* ReservedRockets.css */
-
-.rocket-table {
-  display: absolute;
-  width: 50%;
-  /* border-collapse: collapse; */
-  /* margi n-top: 10px; */
-  margin-left: 50%;
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
-.rocket-table th,
-.rocket-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+.rockets-container {
+  min-width: 48%;
 }
 
-.rocket-table th {
-  background-color: #f2f2f2;
+.mission-container {
+  min-width: 48%;
 }
 
-.mission-table {
-  display: relative;
-  width: 50%;
-  /* border-collapse: collapse; */
-  /* margin-top: 10px; */
-  margin-right: 50%;
+.mission-container ul {
+  border: 1px solid #e3e3e3;
 }
 
-.mission-table th,
-.mission-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+.mission-item:not(:last-child) {
+  border-bottom: 1px solid #e3e3e3;
 }
 
-.mission-table th {
-  background-color: #f2f2f2;
+.profile-container h2 {
+  font-size: 1.5rem;
+}
+
+.no-mission,
+.no-rockets {
+  color: #555;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.item {
+  list-style: none;
+  margin: 10px 0;
+  padding: 1.5rem;
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid #e3e3e3;
 }
