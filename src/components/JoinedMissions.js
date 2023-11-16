@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-// import myprofile from './styles/myprofile.css';
+
 const JoinedMissions = () => {
   const { missions } = useSelector((state) => state.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved);

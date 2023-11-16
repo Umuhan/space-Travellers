@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-// import myprofile from './styles/myprofile.css';
+
 const ReservedRockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);

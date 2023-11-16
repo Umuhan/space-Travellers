@@ -7,11 +7,16 @@ import {
   leaveMission,
 } from '../redux/missions/missionsSlice';
 
+let render = true;
 const Missions = () => {
   const { missions, loading, error } = useSelector((state) => state.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (!render) {
+      return;
+    }
+    render = false;
     dispatch(fetchMissions());
   }, [dispatch]);
 
