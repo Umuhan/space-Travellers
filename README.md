@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space-travelers]] <a name="about-project"></a>
+# 📖 [Space-travelers] <a name="about-project"></a>
 
 In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
 
