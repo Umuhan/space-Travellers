@@ -9,7 +9,7 @@ const JoinedMissions = () => {
     <div>
       <div>
         <h3>My Missions</h3>
-        {reservedMissions.length === 0 && <p>No reserved missions</p>}
+        {reservedMissions.length === 0 && <p>No missions joined</p>}
         <ul>
           {reservedMissions.map(({ missionName, missionId }) => (
             <li key={missionId}>{missionName}</li>

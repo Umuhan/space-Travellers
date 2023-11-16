@@ -1,5 +1,3 @@
-/** @format */
-
 import { Table, Button, Badge } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
