@@ -1,6 +1,5 @@
-// src/pages/Rockets.js
 import React from 'react';
+import JoinedMissions from '../components/JoinedMissions';
 
-const MyProfile = () => <div>MyProfile Page</div>;
-
+const MyProfile = () => <JoinedMissions />;
 export default MyProfile;
