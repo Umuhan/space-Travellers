@@ -12,7 +12,7 @@ const Navbar = () => (
 
       <ul className="nav-list">
         <li>
-          <NavLink to="/rockets" className="nav-link">
+          <NavLink to="/" className="nav-link">
             Rockets
           </NavLink>
         </li>
