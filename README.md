@@ -4,59 +4,58 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+<details>
+  <summary>📗 Table of Contents</summary>
+  <ul>
+    <li><a href="#-about-project-">📖 Space Travelers Hub</a></li>
+    <li><a href="#-built-with-">🛠 Built With</a></li>
+    <li><a href="#-live-demo-">🚀 Live Demo </a></li>
+    <li><a href="#-getting-started-">💻 Getting Started</a></li>
+    <li><a href="#-authors-">👥 Authors </a></li>
+    <li><a href="#-future-features-">🔭 Future Features</a></li>
+    <li><a href="#-contributing-">🤝 Contributing</a></li>
+    <li><a href="#️-show-your-support-">⭐️ Show your support </a></li>
+    <li><a href="#-acknowledgments-">🙏 Acknowledgments </a></li>
+    <li><a href="#-license-">📝 License</a></li>
+  </ul>
+</details>
+
+<br>
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space-travelers]] <a name="about-project"></a>
+# 📖 Space Travellers <a name="about-project"></a>
 
-[Space-travelers] In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
-
-**[Space Travelers' Hub]**
+> Space Travellers is a website for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
--Reactjs
--Redux
--JavaScript
--CSS
--Jest
--Linters
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://render.com/">Github Pages</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Reserve and Cancel Rockets]]**
-- **[Join and Leave Missions]]**
-- **[Display reserved rockets and joined missions]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [https://umuhan.github.io/space-Travellers/]()
+- **React Components**
+- **Redux Store**
+- **Jest Tests**
+- **Bootstrap**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,115 +69,116 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+```sh
+ git
+ npm
+ node
+ Your favorite text editor
+```
+
 ### Setup
 
 Clone this repository to your desired folder:
 
-Example commands:
-
-cd space-travelers
-git@github.com:Umuhan/space-Travellers.git
+```sh
+ https://github.com/Umuhan/space-Travellers
+```
 
 ### Install
 
 Install this project with:
 
-Example command:
-
-npm install
+```sh
+  cd space-Travelers
+  npm install
+```
 
 ### Usage
 
 To run the project, execute the following command:
 
-Example command:
-
-npm run build
-npm start
+```sh
+  npm run build - Builds development files into production code
+  npm start - Starts the development server
+```
 
 ### Run tests
 
-To run tests, run the following command:
-
-Example command:
-
-npm test
-
-### Deployment
-
-You can deploy this project using:
-
-Example:
+> To run tests, run the following commands:
 
 ```sh
-npm start
+- npm test
+```
 
+### Run Linters
 
-
+- npx eslint .
+- npx stylelint "\*_/_.{css,scss}"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
+## 👥 Authors <a name="authors"></a>
 
+👤 **Author**
 
+- GitHub: [@Author](https://github.com/Author)
+- Twitter: [@Author](https://twitter.com/Author)
+- LinkedIn: [Author](https://www.linkedin.com/in/Author)
 
-👤 **Author1**
+👤 **Hamza Baig**
 
-- GitHub: [@githubhandle](https://github.com/Umuhan)
-- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@hamzabaig](https://github.com/hamzaw9)
+- Twitter: [@hamzabaig](https://twitter.com/hamzabaig059)
+- LinkedIn: [@hamzabaig](https://www.linkedin.com/in/hamzabaig-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
 
-
-
-
-- [ ] **[Reserve and cancel ]**
-- [ ] **[Display reserved]**
-- [ ] **[Rockets and Missions]**
+- [ ] **APIS**
+- [ ] **Extra Components**
+- [ ] **Authenticate**
+- [ ] **Local Storage**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Umuhan/space-Travellers/issues).
+Feel free to check the [issues page](https://github.com/ginabeki/space-travellers/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
-
-
-
-If you like this project give us ⭐
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ACKNOWLEDGEMENTS -->
 
+<!-- FAQ (optional) -->
 
+## ❓ FAQ <a name="faq"></a>
 
+- **[How do you set up react?]**
 
-I would like to thank my partner.
+  - [You run `npx create-react-app <project-name>`]
 
+- **[How to run the project after cloning]**
+
+  - `npm install`
+  - `npm run start`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
+## 📝 License <a name="license"></a>
+
 This project is [MIT](./LICENSE) licensed.
-```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
