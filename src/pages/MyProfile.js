@@ -1,5 +1,11 @@
-import React from 'react';
-import JoinedMissions from '../components/JoinedMissions';
+import React from "react";
+import JoinedMissions from "../components/JoinedMissions";
+import ReservedRockets from "../components/ReservedRockets";
 
-const MyProfile = () => <JoinedMissions />;
+const MyProfile = () => (
+  <div>
+    <JoinedMissions />;
+    <ReservedRockets />
+  </div>
+);
 export default MyProfile;
