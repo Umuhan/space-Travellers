@@ -1,11 +1,12 @@
-import { Table, Button, Badge } from "react-bootstrap";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { Table, Button, Badge } from 'react-bootstrap';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchMissions,
   joinMission,
   leaveMission,
-} from "../redux/missions/missionsSlice";
+} from '../redux/missions/missionsSlice';
+
 let render = true;
 const Missions = () => {
   const { missions, loading, error } = useSelector((state) => state.missions);
@@ -35,7 +36,9 @@ const Missions = () => {
         </tr>
       </thead>
       <tbody>
-        {missions.map(({ missionId, missionName, description, reserved }) => (
+        {missions.map(({
+          missionId, missionName, description, reserved,
+        }) => (
           <tr key={missionId}>
             <td className="bold">{missionName}</td>
             <td>{description}</td>
