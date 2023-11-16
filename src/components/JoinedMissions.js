@@ -1,4 +1,5 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
+import myprofile from "./styles/myprofile.css";
 
 const JoinedMissions = () => {
   const { missions } = useSelector((state) => state.missions);
@@ -8,13 +9,22 @@ const JoinedMissions = () => {
   return (
     <div>
       <div>
-        <h3>My Missions</h3>
-        {reservedMissions.length === 0 && <p>No reserved missions</p>}
-        <ul>
-          {reservedMissions.map(({ missionName, missionId }) => (
-            <li key={missionId}>{missionName}</li>
-          ))}
-        </ul>
+        <table className="mission-table">
+          <thead>
+            <tr>
+              <th>My Missions</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {reservedMissions.map(({ missionName, missionId }) => (
+              <tr key={missionId}>
+                <td>{missionName}</td>
+                {/* <td>{rocketId}</td> */}
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
