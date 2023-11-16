@@ -52,14 +52,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [https://umuhan.github.io/space-Travellers/]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -129,11 +121,11 @@ npm start
 - Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
 
-👤 **Author2**
+👤 **Hamza Baig**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@hamzabaig](https://github.com/hamzaw9)
+- Twitter: [@hamzabaig](https://twitter.com/hamzabaig059)
+- LinkedIn: [@hamzabaig](https://www.linkedin.com/in/hamzabaig-/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
