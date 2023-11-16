@@ -27,9 +27,7 @@
 
 # 📖 [Space-travelers]] <a name="about-project"></a>
 
-[Space-travelers] In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
-
-**[Space Travelers' Hub]**
+In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,6 +63,10 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
+
+**Clone this repo as described in the setup section.**
+
+**Make modifications as peferred**
 
 ### Prerequisites
 
@@ -121,6 +123,7 @@ npm start
 <!-- AUTHORS -->
 
 
+## 👥 Authors <a name="authors"></a>
 
 
 👤 **Author1**
@@ -137,8 +140,11 @@ npm start
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+
 <!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
 
 
 
@@ -150,6 +156,7 @@ npm start
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+## 🤝 Contributing <a name="contributing"></a>
 
 
 Contributions, issues, and feature requests are welcome!
@@ -160,6 +167,7 @@ Feel free to check the [issues page](https://github.com/Umuhan/space-Travellers/
 
 <!-- SUPPORT -->
 
+## ⭐️ Show your support <a name="support"></a>
 
 
 
@@ -170,6 +178,7 @@ If you like this project give us ⭐
 
 <!-- ACKNOWLEDGEMENTS -->
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
 
@@ -179,6 +188,9 @@ I would like to thank my partner.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
 
 This project is [MIT](./LICENSE) licensed.
 ```
