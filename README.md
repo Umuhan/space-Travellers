@@ -1,5 +1,10 @@
 <a name="readme-top"></a>
 
+<div align="center">
+  <br/>
+
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -10,12 +15,12 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -27,25 +32,25 @@
 
 # 📖 [Space-travelers] <a name="about-project"></a>
 
-In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
+**[Space-travelers]** In this project, we build a web application using real live data from the SpaceX API. The website allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
--Reactjs
--Redux
--JavaScript
--CSS
--Jest
--Linters
+- Reactjs
+- Redux
+- JavaScript
+- CSS
+- Jest
+- Linters
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Reserve and Cancel Rockets]]**
-- **[Join and Leave Missions]]**
+- **[Reserve and Cancel Rockets]**
+- **[Join and Leave Missions]**
 - **[Display reserved rockets and joined missions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -54,7 +59,7 @@ In this project, we build a web application using real live data from the SpaceX
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [https://umuhan.github.io/space-Travellers/]()
+- [Live Demo Link](https://umuhan.github.io/space-Travellers/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,10 +69,6 @@ In this project, we build a web application using real live data from the SpaceX
 
 To get a local copy up and running, follow these steps.
 
-**Clone this repo as described in the setup section.**
-
-**Make modifications as peferred**
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -76,92 +77,81 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-Example commands:
-
-cd space-travelers
-git@github.com:Umuhan/space-Travellers.git
+```sh
+  cd space-travelers
+  git@github.com:Umuhan/space-Travellers.git
+```
 
 ### Install
 
 Install this project with:
 
-Example command:
-
-npm install
+```sh
+ npm install
+```
 
 ### Usage
 
 To run the project, execute the following command:
 
-Example command:
-
-npm run build
-npm start
+```sh
+ npm run build
+ npm start
+```
 
 ### Run tests
 
 To run tests, run the following command:
 
-Example command:
-
-npm test
+```sh
+  npm test
+```
 
 ### Deployment
 
 You can deploy this project using:
 
-Example:
-
 ```sh
 npm start
-
-
-
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Umuhan Mohamud**
 
-👤 **Author1**
+- GitHub: [@github](https://github.com/Umuhan)
+- Twitter: [@twitter](https://twitter.com/HannyUmuhan)
+- LinkedIn: [@linkedin](https://www.linkedin.com/in/umuhan-mohamud/)
 
-- GitHub: [@githubhandle](https://github.com/Umuhan)
-- Twitter: [@twitterhandle](https://twitter.com/HannyUmuhan)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umuhan-mohamud/)
+👤 **Hamza Baig**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@github](https://github.com/)
+- Twitter: [@twitter](https://twitter.com/)
+- LinkedIn: [@linkedin](https://www.linkedin.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-
-
-- [ ] **[Reserve and cancel ]**
-- [ ] **[Display reserved]**
-- [ ] **[Rockets and Missions]**
+- [ ] **[Add dragon's page]**
+- [ ] **[Reserve and cancel dragon's]**
+- [ ] **[Display reserved dragon's]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-## 🤝 Contributing <a name="contributing"></a>
 
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Umuhan/space-Travellers/issues).
+Feel free to check the [issues page](https://github.com/MohamedHNoor/space-travelers/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -169,10 +159,7 @@ Feel free to check the [issues page](https://github.com/Umuhan/space-Travellers/
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-
 If you like this project give us ⭐
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,10 +167,7 @@ If you like this project give us ⭐
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-
-
 I would like to thank my partner.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,6 +175,8 @@ I would like to thank my partner.
 
 ## 📝 License <a name="license"></a>
 
+This project is [MIT](./MIT.md) licensed.
 
-This project is [MIT](./LICENSE) licensed.
-```
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
