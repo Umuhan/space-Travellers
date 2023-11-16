@@ -1,11 +1,10 @@
-import { useSelector } from 'react-redux';
-// import myprofile from './styles/myprofile.css';
+import { useSelector } from "react-redux";
 const ReservedRockets = () => {
   const { rockets } = useSelector((state) => state.rockets);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
   const reservedRocketsStyling = {
-    border: reservedRockets.length === 0 ? 'none' : '1px solid #E3E3E3',
-    marginTop: '10px',
+    border: reservedRockets.length === 0 ? "none" : "1px solid #E3E3E3",
+    marginTop: "10px",
   };
   return (
     <>

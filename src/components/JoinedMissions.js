@@ -1,11 +1,10 @@
-import { useSelector } from 'react-redux';
-// import myprofile from './styles/myprofile.css';
+import { useSelector } from "react-redux";
 const JoinedMissions = () => {
   const { missions } = useSelector((state) => state.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved);
   const joinedMissionsStyling = {
-    border: reservedMissions.length === 0 ? 'none' : '1px solid #E3E3E3',
-    marginTop: '10px',
+    border: reservedMissions.length === 0 ? "none" : "1px solid #E3E3E3",
+    marginTop: "10px",
   };
   return (
     <>
