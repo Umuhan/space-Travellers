@@ -18,7 +18,7 @@
   font-size: medium;
 }
 
-.btn {
+.rocket-btn {
   background-color: #7955f1;
   border: none;
   color: white;
@@ -45,4 +45,5 @@
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 10px;
 }
