@@ -93,6 +93,14 @@ Install this project with:
   npm install
 ```
 
+## Deployment
+
+You can deploy this project using:
+
+[Live Demo](https://readers-bookstore.netlify.app)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Usage
 
 To run the project, execute the following command:
