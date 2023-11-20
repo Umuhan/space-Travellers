@@ -131,9 +131,9 @@ To run the project, execute the following command:
 
 👤 **Umuhan Mohamud**
 
-- GitHub: [@Author](https://github.com/Umuhan)
-- Twitter: [@Author](https://twitter.com/HannyUmuhan)
-- LinkedIn: [Author](https://www.linkedin.com/in/umuhan-mohamud/)
+- GitHub: [@Umuhan](https://github.com/Umuhan)
+- Twitter: [@Umuhan](https://twitter.com/HannyUmuhan)
+- LinkedIn: [@umuhan](https://www.linkedin.com/in/umuhan-mohamud/)
 
 👤 **Hamza Baig**
 
