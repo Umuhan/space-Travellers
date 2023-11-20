@@ -121,11 +121,11 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Umuhan Mohamud**
 
-- GitHub: [@Author](https://github.com/Author)
-- Twitter: [@Author](https://twitter.com/Author)
-- LinkedIn: [Author](https://www.linkedin.com/in/Author)
+- GitHub: [@Author](https://github.com/Umuhan)
+- Twitter: [@Author](https://twitter.com/HannyUmuhan)
+- LinkedIn: [Author](https://www.linkedin.com/in/umuhan-mohamud/)
 
 👤 **Hamza Baig**
 
